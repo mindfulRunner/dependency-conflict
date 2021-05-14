@@ -1,0 +1,57 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: 'maven'
+
+group 'org.mindfulrunner'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+//configurations {
+//    compile {
+//        withDependencies { DependencySet dependencies ->
+//            ExternalModuleDependency dep = dependencies.find { it.name == 'c' } as ExternalModuleDependency
+//            dep.version {
+//                strictly "1.0"
+//            }
+//        }
+//    }
+//}
+
+//configurations {
+//    pluginTool {
+//        defaultDependencies { dependencies  ->
+//            dependencies.add(project.dependencies.create('org.mindfulrunner:c:1.0'))
+//        }
+//    }
+//}
+
+dependencies {
+    compile 'org.mindfulrunner:c:2.0'
+    compile 'org.mindfulrunner:b:1.0-SNAPSHOT'
+//    compile project(':b')
+//    compile(project(':b'))
+//    compile(project(':b')) {
+//        exclude group: 'org.mindfulrunner', module: 'c'
+//    }
+//    compile('org.mindfulrunner:b:1.0-SNAPSHOT') {
+        //transitive = false
+//        constraints {
+//            compile 'org.mindfulrunner:c:1.0'
+//        }
+//    }
+
+//    compile project(path: ':b', configuration: 'conf_force_v1')
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.0'
+}
+
+test {
+    useJUnitPlatform()
+}

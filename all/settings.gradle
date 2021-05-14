@@ -1,0 +1,5 @@
+rootProject.name = 'all'
+include 'a'
+include 'b'
+include 'c'
+

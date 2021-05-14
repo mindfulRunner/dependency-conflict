@@ -1,0 +1,12 @@
+task testsJar(type: Jar) {
+    from sourceSets.test.output
+    classifier = 'tests'
+}
+
+configurations {
+    testArtifacts
+}
+
+artifacts {
+    testArtifacts testsJar
+}

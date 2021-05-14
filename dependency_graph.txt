@@ -1,0 +1,207 @@
+C:\a\workspace\airbnb_altran\gradle\all>gradlew a:dependencies
+Starting a Gradle Daemon, 44 stopped Daemons could not be reused, use --status for details
+
+> Task :a:dependencies
+
+------------------------------------------------------------
+Project :a
+------------------------------------------------------------
+
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
+No dependencies
+
+apiElements - API elements for main. (n)
+No dependencies
+
+archives - Configuration for archive artifacts. (n)
+No dependencies
+
+compileClasspath - Compile classpath for source set 'main'.
++--- com.x:c_v2:2.0
+\--- org.mindfulrunner:b:1.0-SNAPSHOT
+     \--- com.x:c_v1:1.0
+
+compileOnly - Compile only dependencies for source set 'main'. (n)
+No dependencies
+
+default - Configuration for default artifacts. (n)
+No dependencies
+
+implementation - Implementation only dependencies for source set 'main'. (n)
+No dependencies
+
+runtimeClasspath - Runtime classpath of source set 'main'.
++--- com.x:c_v2:2.0
+\--- org.mindfulrunner:b:1.0-SNAPSHOT
+     \--- com.x:c_v1:1.0
+
+runtimeElements - Elements of runtime for main. (n)
+No dependencies
+
+runtimeOnly - Runtime only dependencies for source set 'main'. (n)
+No dependencies
+
+testAnnotationProcessor - Annotation processors and their dependencies for source set 'test'.
+No dependencies
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- com.x:c_v2:2.0
++--- org.mindfulrunner:b:1.0-SNAPSHOT
+|    \--- com.x:c_v1:1.0
+\--- org.junit.jupiter:junit-jupiter-api:5.6.0
+     +--- org.junit:junit-bom:5.6.0
+     |    +--- org.junit.jupiter:junit-jupiter-api:5.6.0 (c)
+     |    \--- org.junit.platform:junit-platform-commons:1.6.0 (c)
+     +--- org.apiguardian:apiguardian-api:1.1.0
+     +--- org.opentest4j:opentest4j:1.2.0
+     \--- org.junit.platform:junit-platform-commons:1.6.0
+          +--- org.junit:junit-bom:5.6.0 (*)
+          \--- org.apiguardian:apiguardian-api:1.1.0
+
+testCompileOnly - Compile only dependencies for source set 'test'. (n)
+No dependencies
+
+testImplementation - Implementation only dependencies for source set 'test'. (n)
+\--- org.junit.jupiter:junit-jupiter-api:5.6.0 (n)
+
+testRuntimeClasspath - Runtime classpath of source set 'test'.
++--- com.x:c_v2:2.0
++--- org.mindfulrunner:b:1.0-SNAPSHOT
+|    \--- com.x:c_v1:1.0
++--- org.junit.jupiter:junit-jupiter-api:5.6.0
+|    +--- org.junit:junit-bom:5.6.0
+|    |    +--- org.junit.jupiter:junit-jupiter-api:5.6.0 (c)
+|    |    +--- org.junit.jupiter:junit-jupiter-engine:5.6.0 (c)
+|    |    +--- org.junit.platform:junit-platform-commons:1.6.0 (c)
+|    |    \--- org.junit.platform:junit-platform-engine:1.6.0 (c)
+|    +--- org.apiguardian:apiguardian-api:1.1.0
+|    +--- org.opentest4j:opentest4j:1.2.0
+|    \--- org.junit.platform:junit-platform-commons:1.6.0
+|         +--- org.junit:junit-bom:5.6.0 (*)
+|         \--- org.apiguardian:apiguardian-api:1.1.0
+\--- org.junit.jupiter:junit-jupiter-engine -> 5.6.0
+     +--- org.junit:junit-bom:5.6.0 (*)
+     +--- org.apiguardian:apiguardian-api:1.1.0
+     +--- org.junit.platform:junit-platform-engine:1.6.0
+     |    +--- org.junit:junit-bom:5.6.0 (*)
+     |    +--- org.apiguardian:apiguardian-api:1.1.0
+     |    +--- org.opentest4j:opentest4j:1.2.0
+     |    \--- org.junit.platform:junit-platform-commons:1.6.0 (*)
+     \--- org.junit.jupiter:junit-jupiter-api:5.6.0 (*)
+
+testRuntimeOnly - Runtime only dependencies for source set 'test'. (n)
+\--- org.junit.jupiter:junit-jupiter-engine (n)
+
+(c) - dependency constraint
+(*) - dependencies omitted (listed previously)
+
+(n) - Not resolved (configuration is not meant to be resolved)
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 10s
+1 actionable task: 1 executed
+C:\a\workspace\airbnb_altran\gradle\all>https://stackoverflow.com/questions/44753923/how-to-resolve-conflicts-with-multiple-versions-of-the-same-dependencies
+C:\a\workspace\airbnb_altran\gradle\all>gradlew b:dependencies
+
+> Task :b:dependencies
+> Starting Daemon
+------------------------------------------------------------
+Project :b
+------------------------------------------------------------
+
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
+No dependencies
+
+apiElements - API elements for main. (n)
+No dependencies
+
+archives - Configuration for archive artifacts. (n)
+No dependencies
+
+compileClasspath - Compile classpath for source set 'main'.
+\--- com.x:c_v1:1.0
+
+compileOnly - Compile only dependencies for source set 'main'. (n)
+No dependencies
+
+default - Configuration for default artifacts. (n)
+No dependencies
+
+implementation - Implementation only dependencies for source set 'main'. (n)
+No dependencies
+
+runtimeClasspath - Runtime classpath of source set 'main'.
+\--- com.x:c_v1:1.0
+
+runtimeElements - Elements of runtime for main. (n)
+No dependencies
+
+runtimeOnly - Runtime only dependencies for source set 'main'. (n)
+No dependencies
+
+testAnnotationProcessor - Annotation processors and their dependencies for source set 'test'.
+No dependencies
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- com.x:c_v1:1.0
+\--- org.junit.jupiter:junit-jupiter-api:5.6.0
+     +--- org.junit:junit-bom:5.6.0
+     |    +--- org.junit.jupiter:junit-jupiter-api:5.6.0 (c)
+     |    \--- org.junit.platform:junit-platform-commons:1.6.0 (c)
+     +--- org.apiguardian:apiguardian-api:1.1.0
+     +--- org.opentest4j:opentest4j:1.2.0
+     \--- org.junit.platform:junit-platform-commons:1.6.0
+          +--- org.junit:junit-bom:5.6.0 (*)
+          \--- org.apiguardian:apiguardian-api:1.1.0
+
+testCompileOnly - Compile only dependencies for source set 'test'. (n)
+No dependencies
+
+testImplementation - Implementation only dependencies for source set 'test'. (n)
+\--- org.junit.jupiter:junit-jupiter-api:5.6.0 (n)
+
+testRuntimeClasspath - Runtime classpath of source set 'test'.
++--- com.x:c_v1:1.0
++--- org.junit.jupiter:junit-jupiter-api:5.6.0
+|    +--- org.junit:junit-bom:5.6.0
+|    |    +--- org.junit.jupiter:junit-jupiter-api:5.6.0 (c)
+|    |    +--- org.junit.jupiter:junit-jupiter-engine:5.6.0 (c)
+|    |    +--- org.junit.platform:junit-platform-commons:1.6.0 (c)
+|    |    \--- org.junit.platform:junit-platform-engine:1.6.0 (c)
+|    +--- org.apiguardian:apiguardian-api:1.1.0
+|    +--- org.opentest4j:opentest4j:1.2.0
+|    \--- org.junit.platform:junit-platform-commons:1.6.0
+|         +--- org.junit:junit-bom:5.6.0 (*)
+|         \--- org.apiguardian:apiguardian-api:1.1.0
+\--- org.junit.jupiter:junit-jupiter-engine -> 5.6.0
+     +--- org.junit:junit-bom:5.6.0 (*)
+     +--- org.apiguardian:apiguardian-api:1.1.0
+     +--- org.junit.platform:junit-platform-engine:1.6.0
+     |    +--- org.junit:junit-bom:5.6.0 (*)
+     |    +--- org.apiguardian:apiguardian-api:1.1.0
+     |    +--- org.opentest4j:opentest4j:1.2.0
+     |    \--- org.junit.platform:junit-platform-commons:1.6.0 (*)
+     \--- org.junit.jupiter:junit-jupiter-api:5.6.0 (*)
+
+testRuntimeOnly - Runtime only dependencies for source set 'test'. (n)
+\--- org.junit.jupiter:junit-jupiter-engine (n)
+
+(c) - dependency constraint
+(*) - dependencies omitted (listed previously)
+
+(n) - Not resolved (configuration is not meant to be resolved)
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 9s
+1 actionable task: 1 executed
+C:\a\workspace\airbnb_altran\gradle\all>
