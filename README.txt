@@ -25,8 +25,23 @@ dependency graph:
         
         
         
-        
 
+class org.mindfulrunner.NamingV1 has interface org.mindfulrunner.Naming as super class
+java.lang.IncompatibleClassChangeError: class org.mindfulrunner.NamingV1 has interface org.mindfulrunner.Naming as super class
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at org.mindfulrunner.ATest.testNaming_from_b(ATest.java:27)
+	...
 
 
 https://docs.gradle.org/current/userguide/dependency_management.html
