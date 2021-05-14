@@ -1,3 +1,5 @@
+Conflict scenario on multiple versions of the same dependency
+
 
 A has two dependencies: B and C.
 
